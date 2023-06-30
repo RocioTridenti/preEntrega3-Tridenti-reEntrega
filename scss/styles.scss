@@ -1,0 +1,221 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "media-mobile.scss";
+@import "media-tablet.scss";
+
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: $navbar-bg-color;
+  height: 12%;
+}
+
+.navbar-brand img {
+  width: 200px;
+  transform: translate(-3rem, -2rem);
+}
+
+.navbar-toggler {
+  color: $navbar-text-color;
+  border-color: $navbar-text-color;
+  transform: translate(0px, -2rem);
+}
+
+.offcanvas-header {
+  background-color: $offcanvas-header-color;
+}
+
+.offcanvas-title {
+  color: $navbar-text-color;
+}
+
+.navbar-nav .nav-link {
+  color: $navbar-text-color;
+}
+
+/* Index */
+.content-box {
+  margin-top: 4rem;
+  text-align: center;
+  color: $text-color;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.carousel-item img {
+  width: 100px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer-box {
+  background-color: $footer-box-color;
+  color: $footer-box-text-color;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-box a img {
+  max-height: 20px;
+}
+
+/* Contact */
+.mb-3 {
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  align-content: center;
+  justify-content: center;
+  margin-left: 11rem;
+  padding: 0;
+  transform: translate($mb-3-transform-translate-x, $mb-3-transform-translate-y);
+}
+
+.aboutme img {
+  display: inline-flex;
+  width: 15rem;
+  height: 16rem;
+  border-radius: 90%;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  transform: translate($aboutme-img-transform-translate-x, $aboutme-img-transform-translate-y);
+}
+
+.aboutme p {
+    @extend .content-sub2;
+  display: flex;
+  font-size: 20px;
+  margin-left: 20px;
+  transform: translate($aboutme-p-transform-translate-x, $aboutme-p-transform-translate-y);
+  font-weight: 750;
+  color: $text-color;
+}
+
+button {
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transform: translate($button-transform-translate-x, $button-transform-translate-y);
+}
+
+textarea {
+  resize: none !important;
+  transform: translateY($textarea-transform-translate-y);
+  }
+
+/* Inspiration */
+.tittle__inspo {
+  font-size: 50px;
+  text-align: center;
+  color: $text-color;
+  transform: translateY($tittle-inspo-transform-translate-y);
+  font-weight: 800;
+}
+
+.inspo-box {
+  display: grid;
+  grid-template-columns: repeat(4, 20em);
+  grid-auto-rows: 25rem;
+  justify-content: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+  gap: 0.5rem;
+  transform: translateX($inspo-box-transform-translate-x);
+}
+
+.inspo-box a img {
+  transform: translate($inspo-box-img-transform-translate-x, $inspo-box-img-transform-translate-y);
+  width: 20rem;
+  height: 16rem;
+  border-radius: 15%;
+
+  &:hover {
+    filter: brightness(0.8);
+    border-radius: 18%;
+  }
+}
+
+/* Works */
+.gallery__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__container img {
+  max-width: $gallery-container-img-max-width;
+  max-height: $gallery-container-img-max-height;
+  margin: $gallery-container-img-margin;
+  margin-bottom: $gallery-container-img-margin-bottom;
+
+  &:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(1.5);
+    transition: 0.9s ease all;
+  }
+}
+
+.title__gallery {
+@include font-align;
+  margin-top: $title-gallery-margin-top;
+  color: $title-gallery-color;
+  letter-spacing: $title-gallery-letter-spacing;
+  text-decoration: $title-gallery-text-decoration;
+}
+
+/* History */
+.history-box {
+  max-width: $history-box-width;
+  margin-top: $history-box-margin-top;
+  padding: $history-box-padding;
+}
+
+.animate__animated {
+  font-size: $animate-animated-font-size;
+  margin-bottom: $animate-animated-margin-bottom;
+  text-align: center;
+  color: $animate-animated-color;
+}
+
+.subtitle {
+  font-size: $subtitle-font-size;
+  margin-bottom: $subtitle-margin-bottom;
+  text-align: $subtitle-text-align;
+  text-decoration: $subtitle-text-decoration;
+}
+
+.content-sub1,
+.content-sub2 {
+  font-size: $content-sub1-font-size;
+  line-height: $content-sub1-line-height;
+  margin-bottom: $content-sub1-margin-bottom;
+  text-align: $content-sub1-text-align;
+}
+
+.history1 {
+  max-width: $history1-max-width;
+  height: $history1-height;
+  margin-bottom: $history1-margin-bottom;
+  transform: translateX($history1-transform-translate-x);
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+}

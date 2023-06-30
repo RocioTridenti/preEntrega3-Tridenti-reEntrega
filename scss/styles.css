@@ -1,0 +1,553 @@
+/* Colors */
+/*transform */
+/* size- width - height - margin */
+/*deco and more*/
+@media (max-width: 767px) {
+  /* general */
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+}
+/* navbar */
+.navbar {
+  height: auto;
+}
+
+.navbar-brand img {
+  width: 150px;
+  transform: none;
+}
+
+.navbar-toggler {
+  transform: none;
+}
+
+.offcanvas-header {
+  background-color: #000;
+}
+
+.offcanvas-title {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* index */
+.content-box {
+  margin-top: 2rem;
+}
+
+.content-box:hover {
+  transform: none;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+.footer-box {
+  padding: 0.5rem;
+}
+
+.footer-box a img {
+  max-height: 16px;
+}
+
+/* contact */
+.mb-3 {
+  margin-left: 0;
+  transform: none;
+}
+
+.aboutme img {
+  width: 100%;
+  height: auto;
+  transform: none;
+}
+
+.aboutme p {
+  margin-left: 0;
+  transform: none;
+  font-size: 16px;
+}
+
+button {
+  transform: none;
+  margin-top: 1rem;
+}
+
+textarea {
+  transform: none;
+}
+
+/* inspiration */
+.tittle__inspo {
+  font-size: 30px;
+}
+
+.inspo-box {
+  grid-template-columns: repeat(2, 100%);
+  grid-auto-rows: auto;
+  transform: none;
+}
+
+.inspo-box a img {
+  transform: none;
+  width: 100%;
+  height: auto;
+}
+
+.inspo-box a img:hover {
+  border-radius: 15%;
+}
+
+/* works */
+.gallery__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__container img {
+  max-width: 16rem;
+  max-height: 16rem;
+  margin: 1rem;
+  margin-bottom: 7rem;
+}
+
+.gallery__container img:hover {
+  transform: scale(1.1);
+  filter: hue-rotate(1.5);
+  transition: 0.9s ease all;
+}
+
+.title__gallery {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5rem;
+  color: #8c4303;
+  letter-spacing: 0.4rem;
+  text-decoration: underline;
+}
+
+/*history */
+.history-box {
+  max-width: 97%;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.animate__animated {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #8c4303;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  -webkit-text-decoration: underline #8c4303;
+  text-decoration: underline #8c4303;
+}
+
+.content-sub1,
+.content-sub2,
+.aboutme p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.history1 {
+  max-width: 20rem;
+  height: auto;
+  margin-bottom: 3rem;
+  transform: translateX(30rem);
+}
+
+.history1:hover {
+  filter: brightness(0.7);
+}
+
+/*END MEDIA MOBILE*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* general */
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+}
+/* Navbar */
+.navbar {
+  height: 10%;
+}
+
+.navbar-brand img {
+  width: 150px;
+  transform: translate(-2rem, -1rem);
+}
+
+.navbar-toggler {
+  transform: translate(0px, -1.5rem);
+}
+
+.offcanvas-header {
+  background-color: #000;
+}
+
+.offcanvas-title {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Index */
+.content-box {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.content-box:hover {
+  transform: scale(0.95);
+}
+
+.carousel-item img {
+  width: 80px;
+  height: 400px;
+}
+
+/* Footer */
+.footer-box {
+  padding: 0.8rem;
+}
+
+.footer-box a img {
+  max-height: 18px;
+}
+
+/* Contact */
+.mb-3 {
+  width: 18rem;
+  height: 18rem;
+  margin-left: 8rem;
+  transform: translate(3rem, 0rem);
+}
+
+.aboutme img {
+  width: 13rem;
+  height: 14rem;
+  transform: translate(600px, 80px);
+}
+
+.aboutme p {
+  font-size: 18px;
+  margin-left: 16px;
+  transform: translate(16px, -2rem);
+}
+
+button {
+  transform: translate(-2rem, 2rem);
+}
+
+textarea {
+  transform: translateY(0.6rem);
+}
+
+/* Inspiration */
+.tittle__inspo {
+  font-size: 40px;
+  transform: translateY(60px);
+}
+
+.inspo-box {
+  grid-template-columns: repeat(3, 15em);
+  grid-auto-rows: 18rem;
+  gap: 0.3rem;
+  transform: translateX(-3rem);
+}
+
+.inspo-box a img {
+  transform: translate(-80px, 60px);
+  width: 15rem;
+  height: 12rem;
+  border-radius: 12%;
+}
+
+.inspo-box a img:hover {
+  border-radius: 15%;
+}
+
+/* Works */
+.gallery__container {
+  justify-content: flex-start;
+}
+
+.gallery__container img {
+  max-width: 12rem;
+  max-height: 12rem;
+  margin-bottom: 4rem;
+}
+
+.title__gallery {
+  font-size: 40px;
+  margin-top: 3rem;
+}
+
+/* History */
+.history-box {
+  max-width: 90%;
+  margin-top: 3rem;
+}
+
+.animate__animated {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.content-sub1,
+.content-sub2,
+.aboutme p {
+  font-size: 1rem;
+}
+
+.history1 {
+  max-width: 16rem;
+  margin-bottom: 2rem;
+  transform: translateX(0);
+}
+
+/*END MEDIA TABLET */
+body {
+  background-color: #e6e6e6;
+  color: #8c4303;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  height: 12%;
+}
+
+.navbar-brand img {
+  width: 200px;
+  transform: translate(-3rem, -2rem);
+}
+
+.navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+  transform: translate(0px, -2rem);
+}
+
+.offcanvas-header {
+  background-color: #000;
+}
+
+.offcanvas-title {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Index */
+.content-box {
+  margin-top: 4rem;
+  text-align: center;
+  color: #8c4303;
+}
+.content-box:hover {
+  transform: scale(0.9);
+}
+
+.carousel-item img {
+  width: 100px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Footer */
+.footer-box {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-box a img {
+  max-height: 20px;
+}
+
+/* Contact */
+.mb-3 {
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  align-content: center;
+  justify-content: center;
+  margin-left: 11rem;
+  padding: 0;
+  transform: translate(4rem, 0rem);
+}
+
+.aboutme img {
+  display: inline-flex;
+  width: 15rem;
+  height: 16rem;
+  border-radius: 90%;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(900px, 100px);
+}
+
+.aboutme p {
+  display: flex;
+  font-size: 20px;
+  margin-left: 20px;
+  transform: translate(20px, -3rem);
+  font-weight: 750;
+  color: #8c4303;
+}
+
+button {
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transform: translate(-3rem, 2.6rem);
+}
+
+textarea {
+  resize: none !important;
+  transform: translateY(0.8rem);
+}
+
+/* Inspiration */
+.tittle__inspo {
+  font-size: 50px;
+  text-align: center;
+  color: #8c4303;
+  transform: translateY(80px);
+  font-weight: 800;
+}
+
+.inspo-box {
+  display: grid;
+  grid-template-columns: repeat(4, 20em);
+  grid-auto-rows: 25rem;
+  justify-content: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+  gap: 0.5rem;
+  transform: translateX(-4rem);
+}
+
+.inspo-box a img {
+  transform: translate(-100px, 80px);
+  width: 20rem;
+  height: 16rem;
+  border-radius: 15%;
+}
+.inspo-box a img:hover {
+  filter: brightness(0.8);
+  border-radius: 18%;
+}
+
+/* Works */
+.gallery__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__container img {
+  max-width: 16rem;
+  max-height: 16rem;
+  margin: 1rem;
+  margin-bottom: 7rem;
+}
+.gallery__container img:hover {
+  transform: scale(1.1);
+  filter: hue-rotate(1.5);
+  transition: 0.9s ease all;
+}
+
+.title__gallery {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5rem;
+  color: #8c4303;
+  letter-spacing: 0.4rem;
+  text-decoration: underline;
+}
+
+/* History */
+.history-box {
+  max-width: 97%;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.animate__animated {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #8c4303;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  -webkit-text-decoration: underline #8c4303;
+          text-decoration: underline #8c4303;
+}
+
+.content-sub1,
+.content-sub2,
+.aboutme p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.history1 {
+  max-width: 20rem;
+  height: auto;
+  margin-bottom: 3rem;
+  transform: translateX(30rem);
+}
+.history1:hover {
+  filter: brightness(0.7);
+}/*# sourceMappingURL=styles.css.map */
